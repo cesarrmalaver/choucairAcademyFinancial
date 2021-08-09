@@ -30,13 +30,13 @@ public class AcademyChoucairStepDefinitions {
     }
 
     @When("^he search for the course (.*) on the Choucair academy platform$")
-    public void heSearchForTheCourseRecursosAutomatizaciónBancolombiaOnTheChoucairAcademyPlatform(String course) {
+    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(String course) {
         OnStage.theActorInTheSpotlight().attemptsTo(Search.theCourse());
 
     }
 
     @Then("^he finds the course called resources (.*)$")
-    public void heFindsTheCourseCalledResourcesRecursosAutomatizaciónBancolombia(String question) {
+    public void heFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(String question) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }
 
